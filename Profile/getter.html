@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="name">Name of user: </label>
+    <input type="text" name="name" id="name" />
+
+    <br /><br />
+
+    <input type="button" name="submit" id="submit" value="fetch" />
+
+    <!-- where the data will be shown -->
+    <div id="putt" style="margin-top: 20px"></div>
+
+    <script>
+      const submit = document.getElementById("submit");
+
+      // when u click the fetch button
+      submit.addEventListener("click", async () => {
+        const uname = document.getElementById("name").value;
+
+        // api fetch gets sent to backend
+        const response = await fetch("/getdetails", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ uname }),
+        });
+
+        // the response is stored as a json
+        const gett = await response.json();
+        // console.log(gett.user);
+
+        // displaying the data inside div#putt
+        const putt = (document.getElementById("putt").innerHTML = gett.pbar);
+        const putt1 = (document.getElementById("putt").innerHTML +=
+          gett.height);
+      });
+    </script>
+  </body>
+</html>
