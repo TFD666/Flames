@@ -1,0 +1,65 @@
+/* Body styles */
+body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+ background-size: cover;
+ background-image: url("pexels-photo-1640777.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* Main container styles */
+.main-container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  border-radius: 10px;
+}
+
+/* Upload section styles */
+.upload-section {
+  flex: 1;
+  text-align: center;
+}
+
+/* Upload button styles */
+.upload-button {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: teal;
+}
+
+/* Results section styles */
+.results-section {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Nutritional details styles */
+#nutrition-details p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Hidden class for toggling sections */
+.hidden {
+  display: none;
+}
+.upload-section h3 {
+  font-size: 32px; /* increase font size to 28px */
+  color: rgb(48, 48, 97); /* change color to a blue shade */
+  font-weight: bold; /* make the text bold */
+}
+
+.upload-section p {
+  font-size: 32px; /* increase font size to 18px */
+  color: black ;/* change color to a darker gray shade */
+}
