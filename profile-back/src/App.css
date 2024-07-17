@@ -1,0 +1,125 @@
+/* Ensures that the background color fills the entire page */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: #1a202c; /* bg-gray-900 */
+}
+
+/* Container styling */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a202c; /* bg-gray-900 */
+}
+
+/* Profile card styling */
+.profile-card {
+  background-color: #2d3748; /* bg-gray-800 */
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 60rem;
+}
+
+/* Header styling */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+  width: 6rem;
+  height: 6rem;
+  background-color: #4a5568; /* bg-gray-700 */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0; /* text-gray-500 */
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem; /* Adding margin for better spacing */
+}
+
+.profile-role {
+  color: #718096; /* text-gray-400 */
+}
+
+/* Details styling */
+.profile-details {
+  background-color: #4a5568; /* bg-gray-700 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.profile-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.profile-input {
+  background-color: #2d3748; /* bg-gray-600 */
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+/* Actions styling */
+.profile-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Save button styling */
+.profile-button.save {
+  background: linear-gradient(
+    to right,
+    #38b2ac,
+    #68d391
+  ); /* from-teal-300 to-lime-300 */
+  color: white;
+}
+
+/* Cancel button styling */
+.profile-button.cancel {
+  background: linear-gradient(
+    to right,
+    #ed64a6,
+    #f6ad55
+  ); /* from-pink-500 to-orange-400 */
+  color: white;
+}
+
+/* Edit button styling */
+.profile-button.edit {
+  border: 1px solid #5a67d8; /* border-indigo-600 */
+  color: #000000; /* text-indigo-600 */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensures the text remains visible */
+.profile-button.edit span {
+  position: relative;
+  z-index: 2;
+}
